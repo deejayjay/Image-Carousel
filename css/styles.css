@@ -1,3 +1,66 @@
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 }
+
+.carousel {
+  position: relative;
+  height: 480px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel__track-container {
+  background-color: aquamarine;
+  height: 100%;
+  position: relative;
+}
+
+.carousel__slide {
+  position: absolute;
+  inset: 0;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel__button .material-symbols-outlined {
+  font-size: 3rem;
+}
+
+.carousel__button--left {
+  left: -56px;
+}
+.carousel__button--right {
+  right: -56px;
+}
+
+.carousel__nav {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carousel__indicator.current-slide {
+  background-color: rgba(0, 0, 0, 0.7);
+}
