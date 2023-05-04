@@ -6,7 +6,7 @@
   position: relative;
   height: 480px;
   width: 80%;
-  margin: 0 auto;
+  margin: 3rem auto 1rem;
 }
 
 .carousel__image {
@@ -20,6 +20,7 @@
   height: 100%;
   position: relative;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .carousel__track {
@@ -69,6 +70,8 @@
   width: 15px;
   height: 15px;
   background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 250ms ease-in;
 }
 
 .carousel__indicator.current-slide {
